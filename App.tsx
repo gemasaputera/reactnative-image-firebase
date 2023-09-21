@@ -6,7 +6,12 @@
  */
 
 import React from 'react';
-import type {PropsWithChildren} from 'react';
+import {GoogleSignin} from '@react-native-google-signin/google-signin';
+
+GoogleSignin.configure({
+  webClientId:
+    '471132656356-ghsq3ui0mg9rutetfnhmkml7oeudn0js.apps.googleusercontent.com',
+});
 import {
   Button,
   SafeAreaView,
@@ -41,6 +46,15 @@ function App(): JSX.Element {
       console.log(response);
     });
   };
+  const handleLoginGoole = async () => {
+    try {
+      await GoogleSignin.hasPlayServices();
+      const userInfo = await GoogleSignin.signIn();
+      console.log(userInfo);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <SafeAreaView style={backgroundStyle}>
@@ -58,6 +72,7 @@ function App(): JSX.Element {
           }}>
           <Button title="Open Camera" onPress={handleOpenCamera} />
           <Button title="Open Gallery" onPress={handleOpenGallery} />
+          <Button title="Google" onPress={handleLoginGoole} />
         </View>
       </ScrollView>
     </SafeAreaView>

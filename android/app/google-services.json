@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "471132656356",
+    "firebase_url": "https://dokter-ku-01-default-rtdb.firebaseio.com",
+    "project_id": "dokter-ku-01",
+    "storage_bucket": "dokter-ku-01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471132656356:android:87fda13db58edea96752f1",
+        "android_client_info": {
+          "package_name": "com.testimagefire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471132656356-ghsq3ui0mg9rutetfnhmkml7oeudn0js.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwmUYMvLIv6uhVFwkKHuhWFec7_RGdLSw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471132656356-ghsq3ui0mg9rutetfnhmkml7oeudn0js.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
